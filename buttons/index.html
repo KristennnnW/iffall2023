@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons &mdash; James Fawcett</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+		<script src="https://kit.fontawesome.com/b48e6503c6.js" crossorigin="anonymous"></script>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="css/styles.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Agbalumo&family=Bebas+Neue&family=Metal+Mania&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			main {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .5s;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+				transition: all .2s;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+
+				/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: rgb(46,191,236); /* Old browsers */
+				background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+
+			a#btn_indiegogo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+				transition: all .2s;
+			}
+
+			a#btn_indiegogo:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #eb1478;
+				transition: all .5s;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+			}
+
+			a#btn_indiegogo:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_indiegogo span {
+				position: relative;
+				z-index: 10;
+			}
+			
+			a#btn_apple {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #424242;
+				font-family: 'Roboto', sans-serif;
+				font-size: 25px;
+				text-decoration: none;
+				transition: all .2s;
+			}
+			.apple_icon{
+				position: absolute;
+				transition: transform 0.5s;
+				left: -16px;
+				/* width: 132px; */
+				transform: scale(1.5);
+				top: 6px;
+			}
+
+			a#btn_apple:hover {
+				color: #000000;
+			}
+			#btn_apple:hover .apple_icon{
+				transform: scale(2);
+			}
+
+			a#btn_apple:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_potter {
+				font-family: 'Metal Mania';
+				display: inline-block;
+				position: relative;
+				margin: auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				color: #70664d;
+				font-size: 40px;
+				text-decoration: none;
+				line-height: 40px;
+				transition: background-color 0.3s ease, color 0.3s ease; 
+				border-radius: 5px; 
+			}
+
+			.flash {
+				position: absolute;
+				transition: opacity 0.5s; 
+				left: 84px;
+				transform: scale(3.5);
+				top: 23px;
+				background: linear-gradient(#fefadb, rgb(185, 185, 103)); 
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent; 
+				z-index: -999;
+			}
+
+			a#btn_potter:hover .flash {
+				opacity: 0.5; 
+				transform: scale(5);
+				transition: all .3s;
+			}
+			a#btn_potter:hover{
+				color: rgb(56, 45, 38);
+    			text-shadow: 0 0 3px rgb(251, 255, 0, 0.5);
+			}
+
+			a#btn_lyft {
+				display: inline-block;
+				height: 89px;
+				width: 169px;
+				box-sizing: border-box;
+				border-radius: 20px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: fuchsia;
+				color: #fff;
+				font-size: 40px;
+				font-family: 'Agbalumo', sans-serif;
+				text-decoration: none;
+				align-items: center;
+				transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s; 
+			}
+
+			a#btn_lyft:hover {
+				background-color: #ff77ff; 
+				box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); 
+			}
+
+			a#btn_lyft:active {
+				transform: scale(0.95); 
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+			}
+
+			a#btn_ig {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #000000;
+				font-family: 'Agbalumo', sans-serif;
+				font-size: 25px;
+				text-decoration: none;
+				transition: all .2s;
+				line-height: 20px;
+			}
+
+			.fa-instagram {
+				background: linear-gradient(90deg, rgb(109, 45, 219), rgb(255, 197, 88), rgb(219, 10, 198)); 
+				-webkit-background-clip: text; 
+				background-clip: text;
+				color: transparent; 
+				display: inline-block; 
+				font-size: 60px;
+			}
+
+			a#btn_ig:hover{
+				transform: scale(1.2); 
+			}
+
+			a#btn_tesla {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #b50404;
+				font-family: 'Roboto', sans-serif;
+				font-size: 50px;
+				font-weight: bold;
+				text-decoration: none;
+				transition: all .2s;
+			}
+
+			a#btn_tesla:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: #ff0000;
+				transition: all .3s;
+				
+			}
+
+			a#btn_tesla:hover {
+				color: #000000;
+				text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+				transform: scale(1.2);
+			}
+
+			a#btn_tesla:hover:before {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+
+			a#btn_tesla span {
+				position: relative;
+				z-index: 10;
+			}
+
+			#btn_colorrun {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				width: 50%;              
+				text-align: center;
+				transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s; 
+			}
+
+			.color_icon {
+				max-width: 100%;  
+				height: auto;     
+				filter: grayscale(100%); 
+				border-radius: 30px;
+				transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s, filter 0.3s;
+			}
+
+			#btn_colorrun:hover .color_icon {
+				transform: scale(1.05); 
+				opacity: 0.85;          
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+				filter: grayscale(0%);  
+			}
+			#btn_samsung {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: transparent;
+				text-decoration: none;
+				border-radius: 5px; 
+				transition: text-shadow 0.4s;
+			}
+
+			.samsung {
+				font-weight: bold; 
+				color: darkblue;
+				text-transform: uppercase;
+				font-size: 24px;
+				text-shadow: none;
+				transition: color 0.4s, text-shadow 0.4s;
+			}
+
+			#btn_samsung:hover .samsung {
+				color: lightblue;
+				
+				text-shadow:
+					0 0 5px #00f,   
+					0 0 10px #00f,
+					0 0 15px #00f,
+					0 0 20px #00f,  
+					2px 2px 3px white; 
+			}
+			#btn_mk {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: transparent;
+				border: 2px solid black; 
+				text-decoration: none;
+				border-radius: 5px;
+				overflow: hidden; 
+				position: relative; 
+				transition: all 0.5s;
+			}
+
+			.mk_text {
+				font-weight: bold;
+				color: black;
+				text-transform: uppercase;
+				font-size: 20px;
+				z-index: 1;
+				transition: color 0.5s;
+			}
+
+			#btn_mk:hover:before {
+				left: 100%; 
+			}
+
+			#btn_mk:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%; 
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgb(180, 171, 117), transparent); 
+				transition: all 0.5s;
+				z-index: 0; 
+			}
+
+			#btn_mk:hover .mk_text {
+				color: rgb(159, 142, 44);
+			}
+			#btn_fb {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #1877f2;
+				border: none;
+				text-decoration: none;
+				border-radius: 5px;
+				overflow: hidden; 
+				position: relative;
+				transition: transform 0.5s; 
+			}
+
+			.fb_text {
+				font-weight: bold;
+				color: white;
+				font-size: 20px;
+				z-index: 1;
+			}
+
+			#btn_fb:hover:after {
+				transform: scale(4);
+				opacity: 0;
+			}
+
+			#btn_fb:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0);
+				width: 100%;
+				height: 100%;
+				background: radial-gradient(circle, white, transparent);
+				z-index: 0; 
+				transition: transform 0.5s, opacity 0.5s;
+				opacity: 0.5;
+			}
+
+			#btn_fb:hover {
+				transform: translateY(-7px); 
+			}
+			#btn_moo {
+				display: inline-block;
+				position: relative;
+				margin:auto;
+				margin-top: 80px;
+				padding: 8px 16px;
+				text-decoration: none;
+				transition: all 0.3s; 
+				width: 80px;
+			}
+
+
+			.moo_icon {
+				display: block;
+				max-width: 100%; 
+				transition: opacity 0.3s;
+			}
+
+			.moo_text {
+				position: absolute; 
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				opacity: 0; 
+				visibility: hidden; 
+				transition: opacity 0.3s, visibility 0.3s;
+				font-size: 65px;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				color: rgb(56,122,95);
+			}
+
+			#btn_moo:hover .moo_icon {
+				opacity: 0;
+			}
+
+			#btn_moo:hover .moo_text {
+				opacity: 1;
+				visibility: visible;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<main>
+
+			<h1>Button Styling &mdash; James Fawcett</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo"><span>indiegogo</span></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.apple.com/" target="_blank" id="btn_apple">
+					<span class="apple">Apple</span>
+					<div class="apple_icon">
+						<i class="fa-brands fa-apple"></i>
+					  </div>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.pottermore.com/" target="_blank" id="btn_potter">
+					<span class="potter">Wizarding</span>
+					<br>
+					<span class="potter">World</span>
+					<div class="flash">
+						<i class="fa-solid fa-bolt-lightning"></i>
+					</div>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.lyft.com/" target="_blank" id="btn_lyft"><span>lyft</span></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.instagram.com/" target="_blank" id="btn_ig">
+					
+					<div class="ig_icon">
+						<i class="fa-brands fa-instagram fa-bounce"></i>
+					</div>
+					<span class="label">Instagram</span>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.teslamotors.com/" target="_blank" id="btn_tesla">
+					<span class="tesla">Tesla</span>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://thecolorrun.com/" target="_blank" id="btn_colorrun">
+					<span><img class="color_icon" src="images/colorrun.png" alt="colorrun"></span>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.samsung.com/us/" target="_blank" id="btn_samsung">
+					<span class="samsung">SAMSUNG</span>
+				</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.michaelkors.com/" target="_blank" id="btn_mk">
+					<span class="mk_text">MICHAEL KORS</span>
+				</a>
+			</div>
+			<div class="button_container">
+				<a href="https://www.facebook.com/" target="_blank" id="btn_fb">
+					<span class="fb_text">facebook</span>
+				</a>
+			</div>
+			<div class="button_container">
+				<a href="http://www.moo.com/us/" target="_blank" id="btn_moo">
+					<img class="moo_icon" src="images/moo.png" alt="moo">
+					<span class="moo_text">MOO</span>
+				</a>
+			</div>
+		</main>	
+
+	</body>
+</html>
