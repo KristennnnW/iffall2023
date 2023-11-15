@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hatsune Miku - home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b48e6503c6.js" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+<div class="home-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home">HOME</a></li>
+                    <li><a href="music.html" class="music">MUSIC</a></li>
+                    <li><a href="game.html" class="game">GAME</a></li>
+                    <li><a href="gallery.html" class="gallery">GALLERY</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="top">
+            <!-- TODO: arrange on the image -->
+            <button>Melt</button>
+            <button>Rolling girl</button>
+            <button>Sand planet</button>
+        </div>
+
+        <button id="pageTurnButton">
+            <i class="fa-solid fa-chevron-right" style="color: #ff7cd3;"></i>
+        </button>  
+
+        <div class="section1">
+            
+            <img src="images/figure.png">
+            <div class="name-des">
+                <h2>Hatsune Miku</h2>
+                <p>
+                    Hatsune Miku (Japanese: 初音ミク) is a Vocaloid software voicebank developed by 
+                    Crypton Future Media and its official anthropomorphic mascot character, a 16-year-old girl 
+                    with long, turquoise twintails. Miku's personification has been marketed as a virtual idol, 
+                    and has performed at live virtual concerts onstage as an animated projection (rear-cast projection
+                     on a specially coated glass screen).
+                </p>
+                <p><strong>Hatsune Miku</strong> was developed by Crypton Future Media as the face for their Vocaloid singing synthesizer 
+                    software. Her creation was aimed at providing a relatable and interactive character for a piece of technology 
+                    that could revolutionize how music was made, allowing users to synthesize singing by inputting lyrics and melody. 
+                    The intention was to blend a commercial product with a cultural icon, sparking creativity among users who would 
+                    then contribute to Miku's growing library of songs. Miku was designed to be a catalyst for community-building and 
+                    creative expression, with an intentionally minimal backstory to encourage fans to create and define her story through
+                     their art and music. Her overwhelming success has not only turned her into a virtual pop star with a worldwide 
+                     following but also established a new model for interactive digital media and community-driven content creation.</p>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <h2>Sources</h2>
+            <p>https://en.wikipedia.org/wiki/Hatsune_Miku</p>
+        </div>
+
+        <script>
+                document.getElementById('pageTurnButton').addEventListener('click', function () {
+                    const section1 = document.querySelector('.section1-scrollable');
+                    section1.classList.toggle('section1-scrollable-active');
+                });
+            </script>
+</div>
+	</body>
+
+</html>
